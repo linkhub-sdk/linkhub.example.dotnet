@@ -11,7 +11,7 @@ namespace Linkhub.example.csharp
 {
   
 
-    public partial class Form1 : Form
+    public partial class frmExample : Form
     {
 
         private const String ServiceID = "POPBILL_TEST";
@@ -21,7 +21,7 @@ namespace Linkhub.example.csharp
 
         private Authority auth = new Authority(LinkID, SecretKey);
 
-        public Form1()
+        public frmExample()
         {
             InitializeComponent();
         }

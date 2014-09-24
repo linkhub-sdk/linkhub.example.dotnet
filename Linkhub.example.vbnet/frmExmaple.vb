@@ -46,4 +46,14 @@ Public Class frmExmaple
 
     End Sub
 
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        Try
+            Dim remainPoint As Double = Auth.getPartnerBalance(TextBox1.Text, ServiceID)
+            MsgBox(remainPoint)
+        Catch ex As LinkhubException
+            MsgBox(ex.code.ToString() + " | " + ex.Message)
+
+        End Try
+    End Sub
 End Class

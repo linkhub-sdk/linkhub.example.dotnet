@@ -25,6 +25,7 @@ Partial Class frmExmaple
         Me.Button1 = New System.Windows.Forms.Button
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.Button2 = New System.Windows.Forms.Button
+        Me.Button3 = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'Button1
@@ -49,14 +50,24 @@ Partial Class frmExmaple
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(201, 50)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "회원 잔액확인"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(287, 182)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(201, 50)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "파트너 잔액확인"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'frmExmaple
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(557, 403)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
@@ -69,5 +80,6 @@ Partial Class frmExmaple
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class

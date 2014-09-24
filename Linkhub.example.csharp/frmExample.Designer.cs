@@ -1,6 +1,6 @@
 ﻿namespace Linkhub.example.csharp
 {
-    partial class Form1
+    partial class frmExample
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
