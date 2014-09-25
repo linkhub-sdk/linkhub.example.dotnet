@@ -30,7 +30,7 @@ Partial Class frmExmaple
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(39, 59)
+        Me.Button1.Location = New System.Drawing.Point(39, 39)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(151, 83)
         Me.Button1.TabIndex = 0
@@ -39,25 +39,25 @@ Partial Class frmExmaple
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(299, 62)
+        Me.TextBox1.Location = New System.Drawing.Point(39, 12)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(189, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(465, 21)
         Me.TextBox1.TabIndex = 1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(286, 114)
+        Me.Button2.Location = New System.Drawing.Point(196, 39)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(201, 50)
+        Me.Button2.Size = New System.Drawing.Size(151, 83)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "회원 잔액확인"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(287, 182)
+        Me.Button3.Location = New System.Drawing.Point(353, 39)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(201, 50)
+        Me.Button3.Size = New System.Drawing.Size(151, 83)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "파트너 잔액확인"
         Me.Button3.UseVisualStyleBackColor = True
@@ -66,7 +66,7 @@ Partial Class frmExmaple
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(557, 403)
+        Me.ClientSize = New System.Drawing.Size(557, 160)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)

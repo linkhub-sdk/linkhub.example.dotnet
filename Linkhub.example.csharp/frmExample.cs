@@ -16,7 +16,7 @@ namespace Linkhub.example.csharp
 
         private const String ServiceID = "POPBILL_TEST";
         private const String LinkID = "TESTER";
-        private const String SecretKey = "lPyb3alKnKOPEzbigVix/W/1JLiF2Hs71ey15bYCewI=";
+        private const String SecretKey = "++SqIwwhxoY+EiBzgGLk3Li0IYUOKWR29yUtxrOOgnY=";
 
 
         private Authority auth = new Authority(LinkID, SecretKey);
@@ -26,12 +26,42 @@ namespace Linkhub.example.csharp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button4_Click(object sender, EventArgs e)
         {
             try
             {
                 Token t = auth.getToken("POPBILL_TEST", "1231212312", new List<String>(new String[] { "110" }));
                 MessageBox.Show(t.session_token);
+                TextBox1.Text = t.session_token;
+            }
+            catch (LinkhubException le)
+            {
+                MessageBox.Show(le.code + "|" + le.Message);
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Double remainPoint = auth.getBalance(TextBox1.Text, ServiceID);
+
+                MessageBox.Show(remainPoint.ToString());
+            }
+            catch (LinkhubException le)
+            {
+                MessageBox.Show(le.code + "|" + le.Message);
+            }
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Double remainPoint = auth.getPartnerBalance(TextBox1.Text, ServiceID);
+
+                MessageBox.Show(remainPoint.ToString());
             }
             catch (LinkhubException le)
             {
